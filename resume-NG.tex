@@ -1,0 +1,99 @@
+%header
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{paralist}
+\usepackage{hyperref}
+
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Jonathan Wilding} % Your name
+
+\address{jonathan.r.wilding@gmail.com $\diamond\;$ (385)482-5644 }%\\} % 
+\address{\href{http://www.jonathanwilding.com}{jonathanwilding.com} $\diamond\;$
+\href{https://www.linkedin.com/in/j-wilding}{linkedin.com/in/j-wilding} $\diamond\;$
+\href{https://www.github.com/j-wilding}{github.com/j-wilding}}
+\begin{document}
+
+%education
+\begin{rSection}{Education}
+{\bf B.S., Mathematics }\hfill {Apr. 2018 - Apr. 2021} \\
+\textit{Brigham Young University, Provo, UT}
+    \begin{compactitem}
+        \item Software Development Emphasis
+        %\item Lucid Software Programming Competition       \hfill {Oct. 2018 - Oct. 2020}
+        %\item Relevant Coursework:
+        %\item[]
+        %    \begin{enumerate}
+        %        \item[] Web Programming (HTML/CSS/JS/Node)
+        %        \item[] Data Structures (C++/Python)
+        %        \item[] Intro to Networking (Security/Internet Protocols/OSI)
+        %    \end{enumerate}
+    \end{compactitem}
+\end{rSection}
+
+%skills
+\begin{rSection}{Skills}
+        \begin{tabular}{ l l l l l l l }
+            Python & Typescript & C++ & Linux & Git  & SQLite   &  MongoDB\\  
+            Data Structures & Linear Algebra & NumPy & Vue.js & Node.js    & React.js & Tailwindcss \\
+            Django & JavaScript & CSS & HTML
+        \end{tabular}
+\end{rSection}
+
+\begin{rSection}{Experience}
+    \textbf{Web Development Research Assistant}\hfill{ Sep.  2020 - May 2021}\\
+    \textit{Information Systems Dept., Brigham Young University, Provo, UT} 
+    \begin{compactitem}
+        %\setlength\itemsep{0em}
+        \item Designed experiment for the testing and analysis of participant multitasking
+            performances.
+        \item Developed a web application to execute the above experiment using Vue.js, Express.js, and
+            MongoDB.
+        \item Presented progress in weekly stand-up meetings.
+    \end{compactitem}
+\textbf{Machine Learning Research Assistant} \hfill{Oct. 2019
+- Jun. 2020}\\
+\textit{Mechanical Engineering Dept., Brigham Young University, Provo, UT}
+    \begin{compactitem}
+        \item Built and maintained a Jupyter Notebook server with an Apache reverse proxy for a team of
+            several data scientists.
+    \end{compactitem}
+\textbf{Mongolian Teacher} \hfill {Sep. 2018 - Sep. 2019}\\
+\textit{Missionary Training Center, Provo, UT} 
+    \begin{compactitem}
+        \item Created and maintained a website to simplify and centralize area resources and
+            materials.
+        \item Led weekly teacher coordination meetings.
+    \end{compactitem}
+\textbf{Product Quality Control and Regulatory Teammate}    \hfill {Jan. 2018 -
+Apr. 2018}\\
+\textit{Golub Corporation, Schenectady, NY}                 \hfill {Jan. 2015 -
+Dec. 2015}  
+    \begin{compactitem}
+        \item Built JavaScript web application for several managers to automate the new nutrition label
+            validation process.
+        \item Improved data entry efficiency over 300\% with Microsoft VBA scripting.
+    \end{compactitem}
+\end{rSection}
+
+%Projects
+\begin{rSection}{Projects}
+    \textbf{Multiple Choice Form Content Management System}
+    (\href{https://forms.jonathanwilding.com}{forms.jonathanwilding.com}) \hfill{Apr. 2021}
+    \begin{compactitem}
+        \item Developed a full-stack, multiple-choice form creation and management system, with
+            Vue.js, Express.js and MongoDB.
+    \end{compactitem}
+    \textbf{The Movie Game} (\href{https://movies.jonathanwilding.com}{movies.jonathanwilding.com}) \hfill{Mar. 2021}
+    \begin{compactitem}
+        \item Created a front-end actor-movie game with JavaScript, which queries the TMDB api.
+    \end{compactitem}
+    \textbf{SVD Image Compression} \hfill{Nov. 2019}
+    \begin{compactitem}
+        \item Wrote python program to compress image data by reducing data complexity and
+            information with Singular Value Decomposition.
+    \end{compactitem}
+\end{rSection}
+
+\end{document}
