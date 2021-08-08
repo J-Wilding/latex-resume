@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# My first script
+
+[[ -d "../pdf" ]] || mkdir "../pdf"
+#[[ -d "../tex" ]] || mkdir "../tex"
+[[ -d "../.trash" ]] || mkdir "../.trash"
+
+count=`ls -1 *.pdf 2>/dev/null | wc -l`
+if [ $count != 0 ]; then
+    echo "Moving pdfs into ../pdf"
+    mv *.pdf ../pdf
+fi
+
+#count=`ls -1 *.tex 2>/dev/null | wc -l`
+#if [ $count != 0 ]; then
+#    echo "Moving tex files into ./tex"
+#    mv *.tex ../tex
+#fi
+
+texTrash=(".aux" ".out" ".fdb_latexmk" ".fls" ".log" ".synctex.gz")
+
+for t in ${texTrash[@]}; do
+    count=`ls -1 *$t 2>/dev/null | wc -l`
+    if [ $count != 0 ]; then
+        echo "Removing: $t files."
+        mv *$t ../.trash
+    fi
+done
