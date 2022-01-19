@@ -1,0 +1,87 @@
+%header
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{paralist}
+\usepackage{hyperref}
+
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Jonathan Wilding} % Your name
+
+\address{jonathan.r.wilding@gmail.com $\diamond\;$ (385)482-5644 }%\\} % 
+\address{
+\href{https://www.linkedin.com/in/j-wilding}{linkedin.com/in/j-wilding} $\diamond\;$
+\href{https://www.github.com/j-wilding}{github.com/j-wilding}}
+\begin{document}
+
+%education
+\begin{rSection}{Education}
+{\bf B.S., Mathematics }\hfill {Apr. 2018 - Apr. 2021} \\
+\textit{Brigham Young University, Provo, UT}
+\begin{itemize}
+    \item Data Science Emphasis
+\end{itemize}
+\end{rSection}
+
+%skills
+\begin{rSection}{Skills}
+    \textbf{Highly Proficient}\\
+        \begin{tabular}{ l l l l l l }
+            Azure Data Lake & Data Factory & Databricks & Linear Algebra & SQL \\
+            Python & Pandas & Linux & Git & Data Structures  
+        \end{tabular}\\\\
+    \textbf{Proficient}\\
+        \begin{tabular}{ l l l l l l }
+            Data Warehousing & Cloud & Big Data & Data Modeling & NumPy & PySpark \\
+            MongoDB & JavaScript & HTML5 & Vue.js &  Tailwindcss & CSS
+        \end{tabular}
+\end{rSection}
+
+\begin{rSection}{Experience}
+    \textbf{Junior Developer}\hfill{Oct. 2021 - Present}\\
+    \textit{HCL Technologies, Sacramento, CA} 
+    \begin{itemize}
+        %\setlength\itemsep{0em}
+        \item Orchestrated data pipeline to automate ETL of customer data in Azure Data Factory.
+        \item Generated dashboard of key performance indicators for customer data with Python in
+            Databricks.
+    \end{itemize}
+    \textbf{Web Development - Research Assistant}\hfill{ Sep.  2020 - May 2021}\\
+    \textit{Information Systems Dept., Brigham Young University, Provo, UT} 
+    \begin{itemize}
+        %\setlength\itemsep{0em}
+        \item Designed and produced a web application to test and analyze participant interruptive
+            multitasking performance with A/B testing.
+        \item Developed a full-stack, multiple-choice form creation and management system with
+            Vue.js, Express.js and MongoDB.
+    \end{itemize}
+\textbf{Machine Learning Support - Research Assistant} \hfill{Oct. 2019
+- Jun. 2020}\\
+\textit{Mechanical Engineering Dept., Brigham Young University, Provo, UT}
+    \begin{itemize}
+        \item Reduced run time by hours and enabled ML models to run remotely by centralizing
+            computational resources to our high-performance server using JupyterHub and web
+            protocols.
+    \end{itemize}
+\textbf{Mongolian Teacher} \hfill {Sep. 2018 - Sep. 2019}\\
+\textit{Missionary Training Center, Provo, UT} 
+    \begin{itemize}
+        \item Taught Mongolian to groups of 6-10 missionaries in an immersive 10-week language
+            course.
+        \item Improved efficiency in planning by creating a website to centralize teaching
+            resources and materials.
+    \end{itemize}
+\textbf{Product Quality Control and Regulatory Teammate}    \hfill {Jan. 2018 -
+Apr. 2018}\\
+\textit{Golub Corporation, Schenectady, NY}                 \hfill {Jan. 2015 -
+Dec. 2015}  
+    \begin{itemize}
+        \item Automated nutrition label verification with a JavaScript web application for product
+            category managers, saving roughly 30 seconds for each label while improving accuracy.
+        \item Transformed data entry in Excel from a 2-minute process to 15 seconds, with
+            VBA scripting.
+    \end{itemize}
+\end{rSection}
+
+\end{document}
