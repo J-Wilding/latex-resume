@@ -44,8 +44,37 @@
     \begin{itemize}
         %\setlength\itemsep{0em}
         \item Orchestrated data pipeline to automate ETL of customer data in Azure Data Factory.
+            \begin{itemize}
+                \item Refined raw CSV customer data into cleansed and transformed columnar
+                    datasets, in a three tiered Delta Lake architecture, with Bronze, Silver and
+                    Gold tiered datasets.
+                \item The Bronze tables moved data into Azure Data Lake Storage Gen 2 and
+                    converted CSV to Parquet format for efficiency.
+                \item Silver Level contained the validated and transformed data of five separate
+                    tables. Used conditional expressions and table lookups to log and filter
+                    errors and invalid data entries.
+                \item The Gold tier table was created as an aggregate table by a series of queries
+                    and joins, to produce an ultra-refined table for analytics and machine
+                    learning.
+            \end{itemize}
         \item Generated dashboard of key performance indicators for customer data with Python in
             Databricks.
+            \begin{itemize}
+                \item Wrote complex SQL queries to compile eight key performance indicators, and
+                    created over a dozen visualizations to communicate the story behind the data.
+                    Improved overall stakeholder understanding of the customer data.
+            \end{itemize}
+        \item Predicted customer churn in Python using Pandas and Sklearn with a logistic
+            regression model trained to oversample the minority class with SMOTE. 
+            \begin{itemize}
+                \item Compared the performance of training data with and without oversampling
+                    the minority class. 
+                \item Assessed that by aggressively predicting customer churn, we can target the 
+                    customers which are more likely to churn with retention programs.
+                \item Identified the features with the most significant coefficients in the
+                    churn model to direct potential retention programs.
+            \end{itemize}
+
     \end{itemize}
     \textbf{Web Development - Research Assistant}\hfill{ Sep.  2020 - May 2021}\\
     \textit{Information Systems Dept., Brigham Young University, Provo, UT} 
